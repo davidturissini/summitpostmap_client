@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Summitpost map</title>
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCY7Iz4DN0iYHwMgJCRp7pJQzIy3iG89Eo&sensor=false"></script>
+		<script data-main="scripts/main.js" src="scripts/lib/require.js"></script>
+		<script>
+			require.config({
+				baseUrl:'scripts',
+				paths: {
+    				backbone: 'lib/backbone',
+    				underscore: 'lib/underscore',
+    				jQuery: 'lib/jQuery',
+    				cookies: 'lib/cookies',
+    				mustache: 'lib/mustache',
+    				q: 'lib/q',
+    				google_maps: 'lib/google_maps'
+			    },
+			    shim: {
+				    'underscore': {
+				      exports: '_'
+				    },
+				    'backbone': {
+				      deps: ["underscore"],
+				      exports: 'Backbone'
+				    },
+				    'jQuery': {
+				    	exports:'jQuery'
+				    },
+				    'cookies': {
+				    	exports:'jaaulde.utils.cookies'
+				    },
+				    'q': {
+				    	exports:'Q'
+				    }
+				}
+			})
+		</script>
+		<style>
+
+			.stretch-full { position:absolute; left:0; right:0; top:0; bottom:0; }
+
+			.infowindow-summit { position:relative; }
+			.infowindow-summit a { text-decoration:none; color:#06c; }
+			.infowindow-summit h1 { margin-left:135px; line-height:90px; vertical-align:middle; }
+			.infowindow-summit img { float:left; max-width:125px; min-height:90px; }
+
+		</style>
+	</head>
+	<body>
+		<section id="map" class="stretch-full"></section>
+	</body>
+</html>
