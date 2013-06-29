@@ -10,7 +10,7 @@ define(
 
 
 		Summit = Backbone.Model.extend({
-
+			idAttribute:'_id'
 		});
 
 

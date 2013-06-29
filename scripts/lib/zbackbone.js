@@ -1423,3 +1423,11 @@
   };
 
 }).call(this);
+
+define(
+  'backbone',
+
+  function () {
+    return Backbone;
+  }
+)

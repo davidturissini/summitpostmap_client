@@ -9,7 +9,7 @@
   if (typeof exports === "object" && exports) {
     module.exports = factory; // CommonJS
   } else if (typeof define === "function" && define.amd) {
-    define(factory); // AMD
+    define('mustache', factory); // AMD
   } else {
     root.Mustache = factory; // <script>
   }

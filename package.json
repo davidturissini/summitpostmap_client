@@ -1,0 +1,15 @@
+{
+  "name": "SummitPostMapClient",
+  "description": "Accomplishments app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "grunt": "x.x.x",
+    "grunt-contrib-concat": "x.x.x",
+    "grunt-contrib-copy": "x.x.x"
+  },
+  "engines": {
+    "node": "0.8.2",
+    "npm": "1.1.36"
+  }
+}
